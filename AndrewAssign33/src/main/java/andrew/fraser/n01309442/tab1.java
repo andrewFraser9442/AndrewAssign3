@@ -37,13 +37,9 @@ public class tab1 extends Fragment {
      * @return A new instance of fragment tab1.
      */
     // TODO: Rename and change types and number of parameters
-    public static tab1 newInstance(String param1, String param2) {
-        tab1 fragment = new tab1();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
+    public static tab1 newInstance()
+    {
+        return new tab1();
     }
 
     @Override

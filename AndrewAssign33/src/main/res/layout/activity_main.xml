@@ -7,42 +7,54 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="294dp"
-        android:layout_height="64dp"
+        android:layout_width="389dp"
+        android:layout_height="71dp"
         android:background="#00BCD4"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.009">
+        app:layout_constraintVertical_bias="0.0">
 
-        <Button
-            android:id="@+id/tab1_btn"
-            android:layout_width="wrap_content"
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="106dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/TAB1" />
+            android:text="TABS:" />
 
-        <Button
-            android:id="@+id/tab2_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/TAB2" />
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:layout_weight="1">
 
-        <Button
-            android:id="@+id/tab3_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/TAB3" />
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/TAB1" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/TAB2" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/TAB3" />
+        </com.google.android.material.tabs.TabLayout>
+
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="289dp"
-        android:layout_height="293dp"
+        android:layout_width="408dp"
+        android:layout_height="633dp"
         android:background="#000000"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -58,4 +70,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </LinearLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout" />
 </androidx.constraintlayout.widget.ConstraintLayout>
