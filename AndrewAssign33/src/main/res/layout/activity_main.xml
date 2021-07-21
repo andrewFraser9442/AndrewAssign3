@@ -6,9 +6,9 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="389dp"
-        android:layout_height="71dp"
+        android:id="@+id/LinearLayout"
+        android:layout_width="404dp"
+        android:layout_height="118dp"
         android:background="#00BCD4"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -23,9 +23,11 @@
             android:layout_width="106dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="TABS:" />
+            android:text="TABS:"
+            android:textSize="24sp" />
 
         <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
             android:layout_width="match_parent"
             android:layout_height="14dp"
             android:layout_weight="1">
@@ -47,15 +49,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/TAB3" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tab4" />
         </com.google.android.material.tabs.TabLayout>
 
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="408dp"
-        android:layout_height="633dp"
-        android:background="#000000"
+        android:layout_width="405dp"
+        android:layout_height="533dp"
+        android:background="#03A9F4"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,10 +73,10 @@
         app:layout_constraintVertical_bias="0.836">
 
         <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/fragmentContainerView"
-            android:name="andrew.fraser.n01309442.tab1"
+            android:id="@+id/fragmentContainerView2"
+            android:name="andrew.fraser.n01309442.Andrew"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="match_parent" />
     </LinearLayout>
 
     <androidx.viewpager2.widget.ViewPager2
@@ -79,5 +87,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+        app:layout_constraintTop_toTopOf="@+id/LinearLayout" />
 </androidx.constraintlayout.widget.ConstraintLayout>
