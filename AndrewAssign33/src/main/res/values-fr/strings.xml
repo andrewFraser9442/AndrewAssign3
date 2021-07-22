@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Andrew Fraser N01309442</string>
+    <string name="TAB1">ONGLET1</string>
+    <string name="TAB2">ONGLET2</string>
+    <string name="TAB3">ONGLET3</string>
+    <string name="tabs">ONGLETS:</string>
+    <string name="change">MONNAIE</string>
+    <string name="open">OUVERTE</string>
+    <string name="alert">ALERTE</string>
+    <string name="exit">Voulez-vous quitter application ?</string>
+    <string name="yes">OUI</string>
+    <string name="no">NON</string>
+    <string name="tab1Text">Veuillez sélectionner une date</string>
+    <string name="tab2Text">Andrew Fraser N01309442</string>
+    <string name="clear">DÉGAGER</string>
+    <string name="firstName">Andrew</string>
+    <string name="lastName">Fraser</string>
+    <string name="switchOn">interrupteur est allumé</string>
+    <string name="switchOff">sinterrupteur est éteint</string>
+    <string name="decline">Les autorisations ont été refusées</string>
+
+
+</resources>

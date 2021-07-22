@@ -3,6 +3,9 @@
     <string name="TAB1">tab1</string>
     <string name="TAB2">tab2</string>
     <string name="TAB3">tab3</string>
+    <string name="tabs">TABS:</string>
+    <string name="change">CHANGE</string>
+    <string name="open">OPEN</string>
     <string name="alert">ALERT</string>
     <string name="exit">Do you want to exit the app?</string>
     <string name="yes">YES</string>
