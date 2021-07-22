@@ -45,6 +45,10 @@ public class Fraser extends Fragment {
         mPaint.setStrokeJoin(Paint.Join.ROUND);
         mPaint.setStrokeWidth(4f);
     }
+    public Fraser()
+    {
+        
+    }
     // override onSizeChanged
 
 

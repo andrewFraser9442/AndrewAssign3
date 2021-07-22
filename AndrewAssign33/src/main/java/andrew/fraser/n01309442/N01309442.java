@@ -22,7 +22,7 @@ public class N01309442 extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_tab3, container, false);
 
-        Switch switch = (Switch) findViewById(R.id.switch1);
+        /*Switch switch = (Switch) findViewById(R.id.switch1);
 
         switch.setOnCheckedChangeListener(new Switch.OnCheckedChangeListener() {
             public void onCheckedChanged(Switch v, boolean isChecked) {
@@ -33,5 +33,7 @@ public class N01309442 extends Fragment {
                 }
             }
         });
+        
+         */
     }
 }

@@ -78,7 +78,7 @@ public class AndrewActivity extends AppCompatActivity {
     public void onBackPressed()
     {
         AlertDialog.Builder alert = new AlertDialog.Builder(AndrewActivity.this);
-        alert.setTitle(R.string.alert);
+        alert.setTitle(R.string.app_name);
         alert.setMessage(R.string.exit);
         alert.setIcon(R.drawable.alert);
         alert.setPositiveButton(R.string.yes, (dialogInterface, i) ->

@@ -43,7 +43,7 @@ public class Andrew extends Fragment {
                     public void onDateChanged(DatePicker view, int year,
                                               int monthOfYear, int dayOfMonth) {
                         // TODO Auto-generated method stub
-                        Snackbar snackbar = Snackbar.make(findViewById(android.R.id.content), R.string.full_name, Snackbar.LENGTH_LONG);
+                        Snackbar snackbar = Snackbar.make(findViewById(android.R.id.content), R.string.app_name, Snackbar.LENGTH_LONG);
                         snackbar.setText(text = month+"/"+day+"/"+year);
                         snackbar.show();
 

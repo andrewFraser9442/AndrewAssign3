@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AndrewAssign3</string>
+    <string name="app_name">Andrew Fraser N01309442</string>
     <string name="TAB1">tab1</string>
     <string name="TAB2">tab2</string>
     <string name="TAB3">tab3</string>
@@ -14,6 +14,7 @@
     <string name="lastName">Fraser</string>
     <string name="switchOn">switch is on</string>
     <string name="switchOff">switch is off</string>
+    <string name="decline">Permissions were declined</string>
 
 
 </resources>
