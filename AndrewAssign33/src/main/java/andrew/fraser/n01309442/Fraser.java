@@ -114,6 +114,20 @@ public class Fraser extends Fragment {
     }
 
      */
+    /*
+    Button button = (Button) findViewById(R.id.clear_btn);
+
+    button.setOnClickListnener(new View.OnClickListener()
+    {
+        @Override
+        public void onClick(View v)
+        {
+            Canvas.drawColor(Color.BLACK);
+        }
+
+    });
+    }
+    */
 
 
     
