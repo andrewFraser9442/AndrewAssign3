@@ -1,17 +1,19 @@
 package andrew.fraser.n01309442;
 
+import android.content.Context;
+
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 public class PageAdapter extends FragmentPagerAdapter {
-    private int numOfTabs;
+    private final Context mContext;
 
-    public PageAdapter(FragmentManager fm, int numOfTabs)
+    public PageAdapter(Context context, FragmentManager fm)
     {
         super(fm);
-        this.numOfTabs = numOfTabs;
+        mContext = context;
     }
 
 

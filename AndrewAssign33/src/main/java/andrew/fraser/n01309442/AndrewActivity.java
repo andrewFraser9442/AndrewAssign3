@@ -3,6 +3,7 @@ package andrew.fraser.n01309442;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import android.app.AlertDialog;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 
@@ -21,16 +22,16 @@ public class AndrewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //PageAdapter tabsPagerAdapter = new PageAdapter(this, getSupportFragmentManager());
 
         tabLayout = (TabLayout) findViewById(R.id.tabLayout);
         tab1 = (TabItem) findViewById(R.id.tab1);
         tab2 = (TabItem) findViewById(R.id.tab2);
         tab3 = (TabItem) findViewById(R.id.tab3);
         tab4 = (TabItem) findViewById(R.id.tab4);
-        //viewPager = findViewById(R.id.viewPager);
 
-        pageAdapter = new PageAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
-        //viewPager.setAdapter(pageAdapter);
+        //final ViewPager viewPager = findViewById(R.id.viewPager);
+        //viewPager.setAdapter(tabsPagerAdapter);
 
 
 
@@ -69,6 +70,23 @@ public class AndrewActivity extends AppCompatActivity {
 
         }
 
+
+    public void onBackPressed()
+    {
+        AlertDialog.Builder alert = new AlertDialog.Builder(AndrewActivity.this);
+        alert.setTitle(R.string.alert);
+        alert.setMessage(R.string.exit);
+        alert.setIcon(R.drawable.alert);
+        alert.setPositiveButton(R.string.yes, (dialogInterface, i) ->
+        {
+            System.exit(0);
+        });
+        alert.setNegativeButton(R.string.no, (dialogInterface, i) ->
+        {
+            dialogInterface.cancel();
+        });
+        alert.show();
+    }
 
 
     }
