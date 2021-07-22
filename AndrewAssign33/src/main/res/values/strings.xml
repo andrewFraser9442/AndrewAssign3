@@ -10,5 +10,10 @@
     <string name="tab1Text">Please select a date</string>
     <string name="tab2Text">Andrew Fraser N01309442</string>
     <string name="clear">CLEAR</string>
+    <string name="firstName">Andrew</string>
+    <string name="lastName">Fraser</string>
+    <string name="switchOn">switch is on</string>
+    <string name="switchOff">switch is off</string>
+
 
 </resources>
