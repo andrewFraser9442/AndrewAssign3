@@ -4,6 +4,11 @@ import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.RadialGradient;
+import android.graphics.Shader;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -60,7 +65,14 @@ public class AF extends Fragment {
                         snackbar.setText(R.string.decline);
                         snackbar.show();
                         */
+
+    /*protected void onDraw(Canvas canvas) {
+        Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        RadialGradient radialGradient = new RadialGradient(0,0,25,Color.RED, Color.BLACK, Shader.TileMode.MIRROR);
+        paint.setShader(radialGradient);
+        canvas.drawRect(100,100,100,paint);
+
+}
+*/
      
-    
-        
 }
