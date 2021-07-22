@@ -30,8 +30,8 @@ public class Andrew extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_tab1, container, false);
 
-       // datePicker = (DatePicker) findViewById(R.id.datePicker);
-        //Calendar today = Calendar.getInstance();
+       /* datePicker = (DatePicker) findViewById(R.id.datePicker);
+        Calendar today = Calendar.getInstance();
         year = today.get(Calendar.YEAR);
         month = today.get(Calendar.MONTH);
         day = today.get(Calendar.DAY_OF_MONTH);
@@ -49,5 +49,6 @@ public class Andrew extends Fragment {
 
                     }
                 } );
+        */
     }
 }
